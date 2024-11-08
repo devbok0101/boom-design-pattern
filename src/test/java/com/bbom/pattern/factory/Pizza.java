@@ -7,8 +7,9 @@ public class Pizza {
         Pizza pizza = new Pizza();
 
         if (type.equals("cheese")) return new CheesePizza();
-        if (type.equals("greek")) return new GreekPizza();
         if (type.equals("pepperoni")) return new PepperpniPizza();
+        if (type.equals("clam")) return new ClamPizza();
+        if (type.equals("egg")) return new EggPizza();
 
         pizza.prepare();
         pizza.bake();
