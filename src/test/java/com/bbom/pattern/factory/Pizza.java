@@ -1,15 +1,19 @@
 package com.bbom.pattern.factory;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
 public class Pizza {
+
+    SimplePizzaFactory simplePizzaFactory;
 
 
     public Pizza orderPizza(String type) {
-        Pizza pizza = new Pizza();
 
-        if (type.equals("cheese")) return new CheesePizza();
-        if (type.equals("pepperoni")) return new PepperpniPizza();
-        if (type.equals("clam")) return new ClamPizza();
-        if (type.equals("egg")) return new EggPizza();
+        Pizza pizza;
+
+        pizza = simplePizzaFactory.createPizza(type);
 
         pizza.prepare();
         pizza.bake();
