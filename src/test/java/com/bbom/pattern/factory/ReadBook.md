@@ -38,3 +38,14 @@ SimplePizzaFactory를 사용하는 것처럼, 간단한 팩토리는 디자인 �
 -> PizzaStore의
     * orderPizza() -> 모든 분점에서 똑같이 진행 :: PizzaStore에 정의했던 그대로 사용
     * createPizza() -> 분점에서 각자 스타일에 맞게 구현 하는 형태로 변경 -> 각 분점 클래스에서 createPizza() 오버라이드해서 사용
+
+
+
+**질문**
+
+### Q. PizzaStore의 서브 클래스 NYPizzaStore에서 무슨 결정을 내리냐?
+* A. 우리가 선택한 PizzaStore의 서브클래스 종류에 따라 결정되지만, 어떤 스타일의 피자가 만들어질지는 NYPizzaStore가 결정합니다.
+
+- PizzaStore과 Pizza의 분리
+  - orderPizza() 메서드에서 Pizza 객체를 가지고 여러 작업을 하지만, 어떤 PizzaStore에서 하는지는 알수 없음
+
