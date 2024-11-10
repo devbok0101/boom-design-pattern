@@ -1,8 +1,8 @@
-package com.bbom.pattern.design.factory.pizzaFactory;
+package com.bbom.pattern.design.presentation.pizzaFactory;
 
 import com.bbom.pattern.design.factory.pizza.standard.*;
 
-public class SimplePizzaFactory {
+public abstract class SimplePizzaFactory {
     public Pizza createPizza(String type) {
         Pizza pizza = null;
 

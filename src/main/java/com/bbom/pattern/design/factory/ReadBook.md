@@ -69,6 +69,12 @@ SimplePizzaFactory를 사용하는 것처럼, 간단한 팩토리는 디자인 �
 * 어떤 클래스의 인터페이스를 만들지는 서브클래스에서 결정합니다.
 -> 팩토리 메서드 패턴을 이용하면 클래스의 인스턴스를 생성하는 것을 서브클래스에 맡기는것입니다.
 
+**병렬 클래스 계층 구조**
+* 서로 다른 계층인데, 같은 구조로 대응 관계를 가지는 것을 의미
+* NyPizzaStore -> NYStyle***Pizza
+* ChicagoPizzaStore -> Chicago****Pizza
+->  그림 그릴 줄 알지?
+
 
 ## 의존성 뒤집기 원칙 (Dependency Inversion Principle)
 * 구상 클래스에 대한 의존성을 줄이는 것
