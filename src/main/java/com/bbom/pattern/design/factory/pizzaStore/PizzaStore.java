@@ -1,6 +1,6 @@
-package com.bbom.pattern.factory.pizzaStore;
+package com.bbom.pattern.design.factory.pizzaStore;
 
-import com.bbom.pattern.factory.pizza.standard.Pizza;
+import com.bbom.pattern.design.factory.pizza.standard.Pizza;
 
 public abstract class PizzaStore {
 
