@@ -1,9 +1,10 @@
-package com.bbom.pattern.factory.pizzaFactory;
+package com.bbom.pattern.factory.pizzaStore;
 
 import com.bbom.pattern.factory.pizza.standard.*;
 
-public class SimplePizzaFactory {
-    public Pizza createPizza(String type) {
+public class CaliforniaPizzaStore extends PizzaStore{
+    @Override
+    Pizza createPizza(String type) {
         Pizza pizza = null;
 
         if (type.equals("cheese")) pizza = new CheesePizza();
