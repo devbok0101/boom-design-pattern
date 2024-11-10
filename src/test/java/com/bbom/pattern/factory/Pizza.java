@@ -1,7 +1,7 @@
 package com.bbom.pattern.factory;
 
+import com.bbom.pattern.factory.pizzaFactory.SimplePizzaFactory;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 
 @AllArgsConstructor
 public class Pizza {

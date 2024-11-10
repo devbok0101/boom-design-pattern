@@ -1,4 +1,6 @@
-package com.bbom.pattern.factory;
+package com.bbom.pattern.factory.pizzaFactory;
+
+import com.bbom.pattern.factory.*;
 
 public class SimplePizzaFactory {
     public Pizza createPizza(String type) {
